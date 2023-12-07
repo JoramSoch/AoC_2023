@@ -91,6 +91,10 @@ print('- seed {}: location {}'.format(loc.index(min(loc))+1, min(loc)))
 
 ### Part Two ##################################################################
 
+# Note: Other than for Part One, my Part Two solution is semi-probabilistic
+# which consists of a presearch and a more rigid search and luckily converges
+# on the correct result.
+
 # get seed ranges
 import random
 seeds_rng = [int(n) for n in text[0][text[0].find(':')+2 : len(text[0])].split()]
