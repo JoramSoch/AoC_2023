@@ -9,7 +9,7 @@ https://adventofcode.com/2023/day/2
 ### Part One ##################################################################
 
 # read input
-filename = 'Day_02_input.txt'
+filename = 'Day_02.txt'
 f = open(filename)
 text = f.readlines()
 
@@ -35,7 +35,7 @@ print(my_sum)
 import numpy as np
 
 # read input
-filename = 'Day_02_input.txt'
+filename = 'Day_02.txt'
 f = open(filename)
 text = f.readlines()
 

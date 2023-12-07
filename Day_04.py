@@ -9,7 +9,7 @@ https://adventofcode.com/2023/day/4
 ### Part One ##################################################################
 
 # read input
-filename = 'Day_04_input.txt'
+filename = 'Day_04.txt'
 f = open(filename)
 text = f.readlines()
 
@@ -29,7 +29,7 @@ print(my_sum)
 ### Part Two ##################################################################
 
 # read input
-filename = 'Day_04_input.txt'
+filename = 'Day_04.txt'
 f = open(filename)
 text = f.readlines()
 
