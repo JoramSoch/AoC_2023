@@ -92,8 +92,8 @@ print('- seed {}: location {}'.format(loc.index(min(loc))+1, min(loc)))
 ### Part Two ##################################################################
 
 # Note: Other than for Part One, my Part Two solution is semi-probabilistic
-# which consists of a presearch and a more rigid search and luckily converges
-# on the correct result.
+# which consists of a presearch and a more rigid search. Luckily, it finds
+# the correct result.
 
 # get seed ranges
 import random
