@@ -2,16 +2,36 @@
 """
 Advent of Code 2023, Day 3
 https://adventofcode.com/2023/day/3
-2023-12-06, 17:15; 2023-12-06, 17:47
+2023-12-06, 17:15; 2023-12-06, 17:47; 2023-12-09, 12:19
 """
 
 
-### Part One ##################################################################
+### Load Data #################################################################
 
 # read input
 filename = 'Day_03.txt'
 f = open(filename)
 text = f.readlines()
+
+# example input
+# text = """
+# 467..114..
+# ...*......
+# ..35..633.
+# ......#...
+# 617*......
+# .....+.58.
+# ..592.....
+# ......755.
+# ...$.*....
+# .664.598..
+# """
+# text = text.split('\n')
+# text = text[1:-1]
+# text = [line+'\n' for line in text]
+
+
+### Part One ##################################################################
 
 # analyze input
 my_sum = 0
@@ -46,11 +66,6 @@ print(my_sum)
 
 
 ### Part Two ##################################################################
-
-# read input
-filename = 'Day_03.txt'
-f = open(filename)
-text = f.readlines()
 
 # analyze input
 my_sum = 0
