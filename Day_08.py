@@ -2,7 +2,7 @@
 """
 Advent of Code 2023, Day 8
 https://adventofcode.com/2023/day/8
-2023-12-08, 17:28; 2023-12-08, 17:45
+2023-12-08, 17:28; 2023-12-08, 17:45; 2023-12-09, 12:00
 """
 
 
@@ -44,7 +44,6 @@ for line in text[2:]:
     left  = line[line.find('(')+1 : line.find(',')]
     right = line[line.find(',')+2 : line.find(')')]
     nodes[node] = {'L': left, 'R': right}
-# print(nodes)
 
 # analyze routes
 dirs  = text[0][:-1]
@@ -71,14 +70,18 @@ for line in text[2:]:
 dirs  = text[0][:-1]
 steps = 0
 nxt   = [key for key in nodes.keys() if key.endswith('A')]
-# steps = 14025644071
-# nxt   = ['DVG', 'XXC', 'JRX', 'MSB', 'DCJ', 'HKJ']
-while not all([key.endswith('Z') for key in nxt]):
+stops = [0 for key in nxt]
+while not all([s!=0 for s in stops]):
     nxt   = [nodes[key][dirs[steps % len(dirs)]] for key in nxt]
     steps = steps + 1
-    if steps % 1000000 == 0: print('{}, '.format(steps), end='')
-print('end.')
-print(steps)
+    for i, key in enumerate(nxt):
+        if stops[i] == 0 and key.endswith('Z'):
+            stops[i] = steps
 
-# Note: This routine has not stopped after 14,025,644,071 iterations,
-# but I also don't know how to simplify the algorithm.
+# compute steps
+import math
+total = math.lcm(*stops)
+print(total)
+
+# Note: This is the first time I needed a hint to solve.
+# I got the LCM suggestion from https://www.reddit.com/r/adventofcode/.
