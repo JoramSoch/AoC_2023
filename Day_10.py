@@ -2,7 +2,7 @@
 """
 Advent of Code 2023, Day 10
 https://adventofcode.com/2023/day/10
-2023-12-10, 19:46; 2023-12-10, 21:49
+2023-12-10, 19:46; 2023-12-10, 21:49; 2023-12-11, 13:35
 """
 
 
@@ -118,6 +118,9 @@ def nxt(xl, yl, xc, yc, ch):
             yn = yc
     return xn, yn
 
+# remove linebreaks
+text = [line.strip('\n') for line in text]
+
 # locate S
 S = [[c=='S' for c in line] for line in text]
 y = [any(s) for s in S].index(True)
@@ -160,14 +163,31 @@ print(steps)
 
 ### Part Two ##################################################################
 
-# plot loop
+# create loop
+import numpy as np
 import matplotlib.pyplot as plt
+loop = np.zeros((len(text),len(text[0])))
+off  = 1000
+for i in range(len(coords1)):
+    loop[coords1[i][1],coords1[i][0]] = +(i+off)/(steps+off)
+    loop[coords2[i][1],coords2[i][0]] = -(i+off)/(steps+off)
+
+# plot loop (1)
 fig = plt.figure(figsize=(16,9))
 ax  = fig.add_subplot(111)
-
-# for all coordinates
 for i in range(len(coords1)-1):
     ax.plot([coords1[i][0], coords1[i+1][0]], \
             [coords1[i][1], coords1[i+1][1]], '-b')
     ax.plot([coords2[i][0], coords2[i+1][0]], \
             [coords2[i][1], coords2[i+1][1]], '-b')
+
+# plot loop (2)
+fig = plt.figure(figsize=(16,9))
+ax  = fig.add_subplot(111)
+pcm = ax.pcolor(loop, cmap='bwr', vmin=-1, vmax=1)
+ax.plot(x, y, '+k', linewidth=2, markersize=10)
+ax.invert_yaxis()
+ax.set_xlabel('column', fontsize=16)
+ax.set_ylabel('row', fontsize=16)
+ax.set_title('Advent of Code 2023, Day 10: Pipe Maze, Part 2', fontweight='bold', fontsize=20)
+fig.colorbar(pcm, ax=ax)
