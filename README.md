@@ -25,3 +25,4 @@ You may find that my coding style is somewhat [MATLAB](https://en.wikipedia.org/
 | 07 | Camel Cards                     | [Day_07.txt](https://github.com/JoramSoch/AoC_2023/blob/main/Day_07.txt) | [Day_07.py](https://github.com/JoramSoch/AoC_2023/blob/main/Day_07.py) |  248836197 |      251195607 |
 | 08 | Haunted Wasteland               | [Day_08.txt](https://github.com/JoramSoch/AoC_2023/blob/main/Day_08.txt) | [Day_08.py](https://github.com/JoramSoch/AoC_2023/blob/main/Day_08.py) |      22199 | 13334102464297 |
 | 09 | Mirage Maintenance              | [Day_09.txt](https://github.com/JoramSoch/AoC_2023/blob/main/Day_09.txt) | [Day_09.py](https://github.com/JoramSoch/AoC_2023/blob/main/Day_09.py) | 1702218515 |            925 |
+| 10 | Pipe Maze                       | [Day_10.txt](https://github.com/JoramSoch/AoC_2023/blob/main/Day_10.txt) | [Day_10.py](https://github.com/JoramSoch/AoC_2023/blob/main/Day_10.py) |       6897 |            ??? |
