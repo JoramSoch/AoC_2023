@@ -28,3 +28,4 @@ You may find that my coding style is somewhat [MATLAB](https://en.wikipedia.org/
 |  10 | Pipe Maze                       | [Day_10.txt](https://github.com/JoramSoch/AoC_2023/blob/main/Day_10.txt) | [Day_10.py](https://github.com/JoramSoch/AoC_2023/blob/main/Day_10.py) |       6897 |            ??? |
 |  11 | Cosmic Expansion                | [Day_11.txt](https://github.com/JoramSoch/AoC_2023/blob/main/Day_11.txt) | [Day_11.py](https://github.com/JoramSoch/AoC_2023/blob/main/Day_11.py) |    9370588 |   746207878188 |
 |  12 | Hot Springs                     | [Day_12.txt](https://github.com/JoramSoch/AoC_2023/blob/main/Day_12.txt) | [Day_12.py](https://github.com/JoramSoch/AoC_2023/blob/main/Day_12.py) |       7670 |            ??? |
+|  13 | Point of Incidence              | [Day_13.txt](https://github.com/JoramSoch/AoC_2023/blob/main/Day_13.txt) | [Day_13.py](https://github.com/JoramSoch/AoC_2023/blob/main/Day_13.py) |      34993 |            ??? |

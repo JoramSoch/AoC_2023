@@ -64,7 +64,7 @@ for i, line in enumerate(text):
     damaged = str2list(damaged)
     print('-> Line {}: records: {}; damaged: {}; '. \
           format(i+1, records, line[line.find(' ')+1:]), end='')
-    # num_fs  = records.count('.')
+    # num_fs= records.count('.')
     num_ht  = records.count('#')
     num_qm  = records.count('?')
     missing = '#'*(sum(damaged)-num_ht) + '.'*(num_qm-(sum(damaged)-num_ht))
