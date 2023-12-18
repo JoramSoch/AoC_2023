@@ -31,3 +31,4 @@ You may find that my coding style is somewhat [MATLAB](https://en.wikipedia.org/
 |  13 | Point of Incidence              | [Day_13.txt](https://github.com/JoramSoch/AoC_2023/blob/main/Day_13.txt) | [Day_13.py](https://github.com/JoramSoch/AoC_2023/blob/main/Day_13.py) |      34993 |            ??? |
 |  14 | Parabolic Reflector Dish        | [Day_14.txt](https://github.com/JoramSoch/AoC_2023/blob/main/Day_14.txt) | [Day_14.py](https://github.com/JoramSoch/AoC_2023/blob/main/Day_14.py) |     108935 |         100876 |
 |  15 | Lens Library                    | [Day_15.txt](https://github.com/JoramSoch/AoC_2023/blob/main/Day_15.txt) | [Day_15.py](https://github.com/JoramSoch/AoC_2023/blob/main/Day_15.py) |     507291 |         296921 |
+|  18 | Lavaduct Lagoon                 | [Day_18.txt](https://github.com/JoramSoch/AoC_2023/blob/main/Day_18.txt) | [Day_18.py](https://github.com/JoramSoch/AoC_2023/blob/main/Day_18.py) |      50465 |            ??? |
